@@ -20,7 +20,7 @@ class ActiveUser
   public function handle($request, Closure $next)
   {
     if (Auth::check()) {
-      $expiresAt = Carbon::now()->addMinute(2);
+      $expiresAt = Carbon::now()->addMinute(1);
       Cache::put("activeUser" . Auth::user()->id, true, $expiresAt);
     }
     return $next($request);

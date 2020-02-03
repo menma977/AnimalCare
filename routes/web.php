@@ -11,14 +11,20 @@
 |
 */
 
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', function () {
-    return view('welcome');
+  return view('welcome');
+});
+
+Route::group(['prefix' => 'config', 'as' => 'config.'], function () {
+  Route::get('/online', 'ConfigController@online')->name('online');
+  Route::get('/', 'ConfigController@onlineList')->name('onlineList');
 });
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::middleware(['activeUser'])->group(function () {
+  Route::get('/home', 'HomeController@index')->name('home');
+});
