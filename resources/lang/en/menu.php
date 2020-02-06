@@ -2,11 +2,22 @@
 
 
 return [
-  'login' => 'Login',
-  'logout' => 'Logout',
-  'forgetPassword' => 'Forgot Your Password?',
+  'or' => 'OR',
+  'login' => 'Sign In',
+  'logout' => 'Sign Out',
+  'loginFacebook' => 'Sign in using Facebook',
+  'loginGoogle' => 'Sign in using Google+',
+  'titleLogin' => 'Sign in to start your session',
+  'forgetPassword' => 'Forgot Your Password ?',
+  'register' => 'Register a new membership',
+  'rememberMe' => 'Remember Me',
   'img' => 'Photo',
   'status' => 'Status',
+
+  'home' => [
+    'index' => 'Home',
+  ],
+
   'user' => [
     'index' => 'User',
     'create' => 'Create',

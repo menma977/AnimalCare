@@ -31,7 +31,7 @@
           <a href="{{ route('home') }}" class="nav-link {{ request()->is('home') ? 'active' : '' }}">
             <i class="nav-icon fas fa-home"></i>
             <p>
-              @lang('menu.home')
+              @lang('menu.home.index')
             </p>
           </a>
         </li>
