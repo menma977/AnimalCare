@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Contracts\Support\Renderable;
 
 class HomeController extends Controller
@@ -23,6 +24,16 @@ class HomeController extends Controller
    */
   public function index()
   {
-    return view('home');
+    $doctor = User::where('Role', 1)->where('status', 0)->where('delete', 0)->count();
+    $store = User::where('Role', 2)->where('status', 0)->where('delete', 0)->count();
+    $user = User::where('Role', 3)->where('status', 0)->where('delete', 0)->count();
+
+    $data = [
+      'doctor' => $doctor,
+      'store' => $store,
+      'user' => $user,
+    ];
+
+    return view('home', $data);
   }
 }

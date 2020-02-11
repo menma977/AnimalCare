@@ -36,6 +36,7 @@ return [
     'id_ktp' => 'ID card number',
     'img_ktp' => 'Photo ID',
   ],
+
   'animalCategory' => [
     'index' => 'Animal Category',
     'create' => 'Create',
@@ -48,6 +49,7 @@ return [
     'name' => 'Name',
     'petType' => 'Pet Type'
   ],
+
   'chatRoom' => [
     'index' => 'Chat Room',
     'create' => 'Create',
@@ -63,6 +65,7 @@ return [
     'to' => 'To',
     'from' => 'From',
   ],
+
   'diagnosis' => [
     'index' => 'Diagnosis',
     'create' => 'Create',

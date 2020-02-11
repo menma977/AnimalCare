@@ -25,7 +25,6 @@
   <link href="{{ url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700') }}" rel="stylesheet">
   @yield('endCSS')
 </head>
-{{--sidebar-collapse accent-warning --}}
 <body class="sidebar-mini layout-fixed" style="height: auto;">
 <div class="wrapper">
 
@@ -55,7 +54,7 @@
     <div class="float-right d-none d-sm-block">
       <b>Version</b> 3.0.1
     </div>
-    <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AbisMeli.io</a>.</strong> All rights
+    <strong>Copyright &copy; 2014-2019 <a href="http://adminlte.io">AnimalCare.io</a>.</strong> All rights
     reserved.
   </footer>
 </div>

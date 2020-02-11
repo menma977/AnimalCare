@@ -27,4 +27,8 @@ Auth::routes();
 
 Route::middleware(['activeUser'])->group(function () {
   Route::get('/home', 'HomeController@index')->name('home');
+
+  Route::group(['prefix' => 'chat', 'as' => 'chat.'], function () {
+    Route::get('/', 'ChatRoomController@index')->name('index');
+  });
 });

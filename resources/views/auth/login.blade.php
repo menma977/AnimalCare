@@ -9,7 +9,7 @@
         Care
       </a>
     </div>
-    <div class="card card-outline card-success">
+    <div class="card card-outline card-teal">
       <div class="card-body login-card-body">
         <p class="login-box-msg">@lang('menu.titleLogin')</p>
         <form method="POST" action="{{ route('login') }}">
